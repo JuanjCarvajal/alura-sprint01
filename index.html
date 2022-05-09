@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-md-flex flex-md-row">
+
+    <div class="principal d-flex flex-column">
+        <header>
+            <img src="./imagenes/logoAlura.png" alt="Logo Alura" class="logo">
+        </header>
+
+        <div class="d-flex flex-column flex-grow">
+            <textarea id="entrada" class="flex-grow" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+
+            <div class="advertencia d-flex">
+                <img src="./imagenes/exclamation-mark-sign_icon-icons.com_54000.png" class="icon-info"><small>Sólo letras minúsculas y sin acentos.</small>
+            </div>
+
+        <div class="controles">
+            <div class="d-flex flex-column flex-sm-row">
+                <input type="button" class="button-e flex-sm-grow" value="Encriptar" onclick="uiCodificar()">
+                <input type="button" class="button-d flex-sm-grow" value="Desencriptar" onclick="uiDecodificar()">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="barra-lateral d-flex flex-column">
+
+        <div class="info d-flex flex-column flex-grow">
+
+            <div class="info-img d-none d-md-block">
+                <img class="muneco" src="./imagenes/munheco.jpg" alt="Muñeco texto">
+            </div>
+
+            <div class="info-txt my-auto">
+                <strong>Ningún mensaje fue encontrado</strong><br/>
+                <span>Ingresa el texto que desees Encriptar o Desencriptar</span>
+            </div>
+
+        </div>
+
+        <div id="salida"></div>
+        <input type="button" class="button copiar" onclick="uiCopiar()" value="Copiar">
+    </div>
+
+    <footer>
+        <h1 class="texto-piedepagina">&copy; Derechos Reservados Juan Carvajal - 2022</h1>
+        <a href="#"><img src="./imagenes/linkedin_black_logo_icon_147114.png" alt="linkedin" class="linkedin"></a>
+        <a href="https://github.com/JuanjCarvajal?tab=repositories"><img src="./imagenes/github-logo_icon-icons.com_73546.png" alt="github" class="github"></a>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
